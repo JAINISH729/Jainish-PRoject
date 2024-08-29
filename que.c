@@ -7,7 +7,6 @@ int main() {
     printf("Enter your score: ");
     scanf("%d", &score);
 
-    // Calculate grade using ternary operator
     grade = (score >= 90) ? 'A' :
             (score >= 80) ? 'B' :
             (score >= 70) ? 'C' :
@@ -16,7 +15,6 @@ int main() {
 
     printf("Your grade is %c. ", grade);
 
-    // Provide additional comments based on grade using switch-case statement
     switch (grade) {
         case 'A':
             printf("Excellent work! ");
@@ -35,7 +33,6 @@ int main() {
             break;
     }
 
-    // Check eligibility for next level using if-else statement
     if (grade != 'F') {
         printf("Congratulations! You are eligible for the next level.");
     } else {
